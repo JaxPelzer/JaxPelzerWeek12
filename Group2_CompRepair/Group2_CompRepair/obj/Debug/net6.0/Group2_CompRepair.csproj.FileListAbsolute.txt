@@ -526,3 +526,9 @@ C:\Users\jaxtp\source\repos\Group2_CompRepair\Group2_CompRepair\Group2_CompRepai
 C:\Users\jaxtp\source\repos\Group2_CompRepair\Group2_CompRepair\Group2_CompRepair\obj\Debug\net6.0\ref\Group2_CompRepair.dll
 C:\Users\jaxtp\source\repos\Group2_CompRepair\Group2_CompRepair\Group2_CompRepair\obj\Debug\net6.0\Group2_CompRepair.pdb
 C:\Users\jaxtp\source\repos\Group2_CompRepair\Group2_CompRepair\Group2_CompRepair\obj\Debug\net6.0\Group2_CompRepair.genruntimeconfig.cache
+C:\Users\jaxtp\source\repos\Group2_CompRepair\Group2_CompRepair\Group2_CompRepair\bin\Debug\net6.0\Azure.Core.dll
+C:\Users\jaxtp\source\repos\Group2_CompRepair\Group2_CompRepair\Group2_CompRepair\bin\Debug\net6.0\Azure.Extensions.AspNetCore.Configuration.Secrets.dll
+C:\Users\jaxtp\source\repos\Group2_CompRepair\Group2_CompRepair\Group2_CompRepair\bin\Debug\net6.0\Azure.Identity.dll
+C:\Users\jaxtp\source\repos\Group2_CompRepair\Group2_CompRepair\Group2_CompRepair\bin\Debug\net6.0\Azure.Security.KeyVault.Secrets.dll
+C:\Users\jaxtp\source\repos\Group2_CompRepair\Group2_CompRepair\Group2_CompRepair\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\jaxtp\source\repos\Group2_CompRepair\Group2_CompRepair\Group2_CompRepair\bin\Debug\net6.0\System.Memory.Data.dll

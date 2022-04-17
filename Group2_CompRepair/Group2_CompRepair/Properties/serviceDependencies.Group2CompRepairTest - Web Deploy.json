@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "apis1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.ApiManagement/service/Group2CompRepairapi1/apis/Group2CompRepairAPI",
+      "type": "apis.azure"
+    },
+    "mssql1": {
+      "secretStore": "AzureKeyVault",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/pelzer/databases/Group2_CompRepair",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:Group2_CompRepair"
+    }
+  }
+}

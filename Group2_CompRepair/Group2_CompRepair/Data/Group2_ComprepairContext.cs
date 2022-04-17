@@ -32,7 +32,7 @@ namespace Group2_CompRepair.Data
             modelBuilder.Entity<ComputerPart>(entity =>
             {
                 entity.HasKey(e => e.ComputerPartsId)
-                    .HasName("PK__Computer__592E0023FA54FA71");
+                    .HasName("PK__Computer__592E0023ADC90AB2");
 
                 entity.ToTable("Computer_Parts");
 
@@ -160,7 +160,7 @@ namespace Group2_CompRepair.Data
             modelBuilder.Entity<PartsOrdersLinking>(entity =>
             {
                 entity.HasKey(e => e.PartsOrdersId)
-                    .HasName("PK__Parts_Or__DFAB96732C009132");
+                    .HasName("PK__Parts_Or__DFAB9673A3988A5D");
 
                 entity.ToTable("Parts_Orders_Linking");
 
@@ -215,7 +215,7 @@ namespace Group2_CompRepair.Data
             modelBuilder.Entity<SoftwareOrdersLinking>(entity =>
             {
                 entity.HasKey(e => e.SoftwareOrdersId)
-                    .HasName("PK__Software__01C332F8C8DFD0E3");
+                    .HasName("PK__Software__01C332F8F26FF682");
 
                 entity.ToTable("Software_Orders_Linking");
 

@@ -42,7 +42,7 @@
          "ObjectType": 0
       }
    ],
-   "UiHint": "DESKTOP-L27FDKD.Group2_CompRepair",
+   "UiHint": "pelzer.Group2_CompRepair",
    "UseBoolPropertiesWithoutDefaultSql": false,
    "UseDatabaseNames": false,
    "UseDbContextSplitting": false,
