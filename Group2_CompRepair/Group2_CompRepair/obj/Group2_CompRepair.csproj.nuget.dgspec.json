@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jaxtp\\source\\repos\\Group2_CompRepair\\Group2_CompRepair\\Group2_CompRepair\\Group2_CompRepair.csproj": {}
+    "C:\\Users\\jaxtp\\source\\repos\\JaxPelzerWeek12\\Group2_CompRepair\\Group2_CompRepair\\Group2_CompRepair.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jaxtp\\source\\repos\\Group2_CompRepair\\Group2_CompRepair\\Group2_CompRepair\\Group2_CompRepair.csproj": {
+    "C:\\Users\\jaxtp\\source\\repos\\JaxPelzerWeek12\\Group2_CompRepair\\Group2_CompRepair\\Group2_CompRepair.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jaxtp\\source\\repos\\Group2_CompRepair\\Group2_CompRepair\\Group2_CompRepair\\Group2_CompRepair.csproj",
+        "projectUniqueName": "C:\\Users\\jaxtp\\source\\repos\\JaxPelzerWeek12\\Group2_CompRepair\\Group2_CompRepair\\Group2_CompRepair.csproj",
         "projectName": "Group2_CompRepair",
-        "projectPath": "C:\\Users\\jaxtp\\source\\repos\\Group2_CompRepair\\Group2_CompRepair\\Group2_CompRepair\\Group2_CompRepair.csproj",
+        "projectPath": "C:\\Users\\jaxtp\\source\\repos\\JaxPelzerWeek12\\Group2_CompRepair\\Group2_CompRepair\\Group2_CompRepair.csproj",
         "packagesPath": "C:\\Users\\jaxtp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jaxtp\\source\\repos\\Group2_CompRepair\\Group2_CompRepair\\Group2_CompRepair\\obj\\",
+        "outputPath": "C:\\Users\\jaxtp\\source\\repos\\JaxPelzerWeek12\\Group2_CompRepair\\Group2_CompRepair\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jaxtp\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -42,39 +42,47 @@
           "dependencies": {
             "Azure.Extensions.AspNetCore.Configuration.Secrets": {
               "target": "Package",
-              "version": "[1.0.0, )"
+              "version": "[1.2.2, )"
             },
             "Azure.Identity": {
               "target": "Package",
-              "version": "[1.4.0, )"
+              "version": "[1.6.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.4, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.3, )"
+              "version": "[6.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.3, )"
+              "version": "[6.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[6.0.3, )"
+              "version": "[6.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.3, )"
+              "version": "[6.0.4, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[6.0.2, )"
+              "version": "[6.0.3, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.2.3, )"
+              "version": "[6.3.1, )"
             }
           },
           "imports": [

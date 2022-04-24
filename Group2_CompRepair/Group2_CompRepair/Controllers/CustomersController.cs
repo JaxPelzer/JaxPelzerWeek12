@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Group2_CompRepair.Data;
 using Group2_CompRepair.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Group2_CompRepair.Controllers
 {
@@ -23,6 +24,7 @@ namespace Group2_CompRepair.Controllers
         }
 
         // GET: api/Customers
+        [Authorize]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Customer>>> GetCustomers()
         {
@@ -30,6 +32,7 @@ namespace Group2_CompRepair.Controllers
         }
 
         // GET: api/Customers/5
+        [Authorize]
         [HttpGet("{id}")]
         public async Task<ActionResult<Customer>> GetCustomer(int id)
         {
@@ -45,6 +48,7 @@ namespace Group2_CompRepair.Controllers
 
         // PUT: api/Customers/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [Authorize]
         [HttpPut("{id}")]
         public async Task<IActionResult> PutCustomer(int id, Customer customer)
         {
@@ -76,6 +80,7 @@ namespace Group2_CompRepair.Controllers
 
         // POST: api/Customers
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [Authorize]
         [HttpPost]
         public async Task<ActionResult<Customer>> PostCustomer(Customer customer)
         {
@@ -86,6 +91,7 @@ namespace Group2_CompRepair.Controllers
         }
 
         // DELETE: api/Customers/5
+        [Authorize]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCustomer(int id)
         {

@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Group2_CompRepair.Data;
 using Group2_CompRepair.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Group2_CompRepair.Controllers
 {
@@ -23,6 +24,7 @@ namespace Group2_CompRepair.Controllers
         }
 
         // GET: api/Softwares
+        [Authorize]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Software>>> GetSoftwares()
         {
@@ -30,6 +32,7 @@ namespace Group2_CompRepair.Controllers
         }
 
         // GET: api/Softwares/5
+        [Authorize]
         [HttpGet("{id}")]
         public async Task<ActionResult<Software>> GetSoftware(int id)
         {
@@ -45,6 +48,7 @@ namespace Group2_CompRepair.Controllers
 
         // PUT: api/Softwares/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [Authorize]
         [HttpPut("{id}")]
         public async Task<IActionResult> PutSoftware(int id, Software software)
         {
@@ -76,6 +80,7 @@ namespace Group2_CompRepair.Controllers
 
         // POST: api/Softwares
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [Authorize]
         [HttpPost]
         public async Task<ActionResult<Software>> PostSoftware(Software software)
         {
@@ -86,6 +91,7 @@ namespace Group2_CompRepair.Controllers
         }
 
         // DELETE: api/Softwares/5
+        [Authorize]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteSoftware(int id)
         {

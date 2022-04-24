@@ -1,5 +1,4 @@
-﻿#nullable disable
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -8,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Group2_CompRepair.Data;
 using Group2_CompRepair.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Group2_CompRepair.Controllers
 {
@@ -16,13 +16,16 @@ namespace Group2_CompRepair.Controllers
     public class ComputerPartsController : ControllerBase
     {
         private readonly Group2_ComprepairContext _context;
+        
 
         public ComputerPartsController(Group2_ComprepairContext context)
         {
             _context = context;
+            
         }
 
         // GET: api/ComputerParts
+        [Authorize]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ComputerPart>>> GetComputerParts()
         {
@@ -30,6 +33,7 @@ namespace Group2_CompRepair.Controllers
         }
 
         // GET: api/ComputerParts/5
+        [Authorize]
         [HttpGet("{id}")]
         public async Task<ActionResult<ComputerPart>> GetComputerPart(int id)
         {
@@ -45,6 +49,7 @@ namespace Group2_CompRepair.Controllers
 
         // PUT: api/ComputerParts/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [Authorize]
         [HttpPut("{id}")]
         public async Task<IActionResult> PutComputerPart(int id, ComputerPart computerPart)
         {
@@ -76,6 +81,7 @@ namespace Group2_CompRepair.Controllers
 
         // POST: api/ComputerParts
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [Authorize]
         [HttpPost]
         public async Task<ActionResult<ComputerPart>> PostComputerPart(ComputerPart computerPart)
         {
@@ -86,6 +92,7 @@ namespace Group2_CompRepair.Controllers
         }
 
         // DELETE: api/ComputerParts/5
+        [Authorize]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteComputerPart(int id)
         {
@@ -101,9 +108,13 @@ namespace Group2_CompRepair.Controllers
             return NoContent();
         }
 
+        
+
         private bool ComputerPartExists(int id)
         {
             return _context.ComputerParts.Any(e => e.ComputerPartsId == id);
         }
+
     }
+
 }

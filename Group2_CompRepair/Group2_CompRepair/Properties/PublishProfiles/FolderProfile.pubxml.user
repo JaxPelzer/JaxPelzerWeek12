@@ -11,5 +11,8 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="global.json">
       <publishTime>04/16/2022 23:34:38</publishTime>
     </File>
+    <File Include="Program.cs">
+      <publishTime>04/16/2022 23:37:49</publishTime>
+    </File>
   </ItemGroup>
 </Project>
